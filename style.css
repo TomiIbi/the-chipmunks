@@ -19,7 +19,7 @@ h2{
 }
 
 h3{
-	font-weight: bold;
+	font-weight: 900;
 	font-size: 25px;
 }
 
@@ -100,6 +100,8 @@ button.cta{
 	padding: 20px 30px;
 	border-radius: 15px; 
 	text-decoration: none;
+	outline: none;
+	cursor: pointer;
 }
 
 a.cta.alt
@@ -115,6 +117,7 @@ nav{
 	box-shadow: 0 5px 8px rgba(0,0,0,.2);
 	position: sticky;
 	top: 0;
+	z-index: 1;
 }
 
 nav .logo {
@@ -180,13 +183,107 @@ text-align: center;
     line-height: 50px;
     display: inline;
     font-weight: 800;
+}
 
+.sep {
+	width: 470px;
+	height: 10px;
+	background-color: black; 
+	margin: 70px auto;
 
+}
 
+.story h3 {
+	text-align: center;
+	font-size: 40px;
+}
+
+.nb-list{
+	width: 470px;
+	padding: 20px 20px 20px 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background-color: #dadfe8;
+	float: left;
+	margin: 100px 20px 20px 0;
+	position: relative;
+}
+
+.nb-list li{
+	height: 70px;
+	border-radius: 10px;
+	font-size: 25px;
+	color: white;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 10px;
+	padding: 6px 20px; 
+}
+
+.nb-list li.yellow{background-color: yellow; color: black}
+.nb-list li.red{background-color: red;}
+.nb-list li.grey{background-color: rgb(0,0,0,.2);}
+.nb-list li.green{background-color: green;}
+.nb-list li.blue{background-color: blue;}
+.nb-list li.red{background-color: red;}
+.nb-list li.green{background-color: green;}
+.nb-list li.blue{background-color: blue;}
+
+.nb-list li.dragging{
+	position: absolute;
+	top: 200px;
+    left: 29px;
+    right: 15px;
+    transform: rotate(9deg);
+	box-shadow: 0 2px 14px rgba(0,0,0,.3);
+}
+
+.nb-list li.dragging:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 54px;
+    height: 60px;
+    background: url(img/hand.png) no-repeat 0 0;
+    background-size: 100%;
+    bottom: -30px;
+    left: 80%;
+
+}
+.gang{
+	display: block;
+	margin: 0 auto; 
+}
+
+footer{
+	text-align: center;
+	color: rgba(0,0,0,.4);
+	font-size: 20px;
+	font-weight: bold;
+}
+
+footer a{
+	color: rgba(0,0,0,.4);
+}
+
+.popup {
+	display: none;
+}
 /*
-<div class="more-info" id="more-info">
-		<h2>Join Our Fan Club</h2>
-		<p> This club was created for the fans of Alvin, Simon and Theodore. Check out our discussions and join in! <br> There are so many interesting topics all revolving around the Chipmunks and the Chipettes and we have <span class="highlight"> monthly parties at the Chipmunk HQ.</span> <br> Feel free to browse through all of the cute pictures and just have fun!</p>
-		<button class="cta">Sign Me Up</button>
-	</div>
+<div class="sep"></div>
+	<div class="story" id="story">
+		<ul class="nb-list">
+<li class="red">1960 Best Engineered Recording </li>
+<li class="grey">&nbsp;</li>
+<li class="green dragging">1961 Best Album for Children</li>
+<li class="blue">2000 Golden Reel Award </li>
+<li class="red">2008 Kids' Choice Award</li>
+<li class="green">2008 American Music Award </li>
+<li class="blue">2010 Favorite Movie Award</li>
 
+		</ul>
+		<h3>Left: Our Awards <br>
+		Below: Our Story</h3>
+		 <p>One particularly harsh winter, there was a nut shortage in the forest and their mother, Vinnie, took off to look for food. </p> 
+		 <p>In her absence, their tree was cut down and carted off to grace the entrance lobby of a city office building, with them in it. </p>   
+		<p> They then hitch a ride in a basket of pastries carried by Dave Seville and wind up in his home- where they wreak havoc, cause uproar in his kitchen and get thrown out. <br> They eventually show Dave how well they can sing and become celebrities as a result. </p>
