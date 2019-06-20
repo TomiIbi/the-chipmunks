@@ -12,6 +12,12 @@ h1{
 
 }
 
+h2{
+	font-weight: 800;
+	font-size: 45px;
+
+}
+
 h3{
 	font-weight: bold;
 	font-size: 25px;
@@ -20,6 +26,12 @@ h3{
 h4{
 	font-weight: bold;
 	font-size: 15px;
+}
+
+p{
+	font-weight: bold;
+	font-size: 30px;
+	margin: 30px 0;
 }
 
 .wrapper{
@@ -55,7 +67,7 @@ h4{
 	background-size: 100%;
 	width: 191px;
 	height: 344px;
-	position: absolute; top: 17%; right: 84px;
+	position: absolute; top: 17%; right: 96px;
 }
 
 .character2{
@@ -82,13 +94,12 @@ button.cta{
 	font-size: 20px;
 	font-weight: bold;
 	color: black;
-	background: #ffaa00; 
+	background-color: #FFD400;
 	display: inline-block; 
-	box-shadow: 0 0 0 10px solid rgba(0,127,255,.15);
+	box-shadow: 0 0 0 10px rgba(0,0,0,.15);
 	padding: 20px 30px;
 	border-radius: 15px; 
 	text-decoration: none;
-
 }
 
 a.cta.alt
@@ -96,24 +107,68 @@ button.cta.alt{
 	background-color: #ff0000;
 	color: black;
 	box-shadow: 0 0 0 10px rgba(0,0,0,.15);
+}
+
+nav{
+	height: 100px;
+	background-color: white;
+	box-shadow: 0 5px 8px rgba(0,0,0,.2);
+	position: sticky;
+	top: 0;
+}
+
+nav .logo {
+    display: block;
+    width: 110px;
+    height: 86px;
+    position: absolute;
+    top: 33%;
+    left: 2%;
+    margin-top: -11px;
+    margin-left: 30px;
+    background: url(img/logo.png) no-repeat 0 0;
+    background-size: 100%;
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+
+	
+nav ul{
+	padding: 0;
+	margin: 0 20px 0 0;
+}
+
+nav ul li{
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: right;
+}
+
+nav ul li a{
+	display: block;
+	height: 100%;
+	box-sizing: border-box;
+	font-size:27px;
+	font-weight: bold;
+	color: red;
+	text-decoration: none;
+	padding: 15px 10px;
+	line-height: 50px;
+}
+
+.more-info{
+text-align: center;
 
 }
-/*
 
-<div class="hero-banner">
-		<div class="wrapper">
-			<h4>Ross Bagdasarian from <a href="https://en.wikipedia.org/wiki/Novelty_song">Novelty Records 1958</a> presents </h4>
-			<h1>The Cheekiest &amp; <br> 
-			Most Mischievous Band <br>
-		in the World!</h1>
-		<h3>Alvin - the mischievous troublemaker <br> 
-		Simon - the tall intellectual &amp; <br>
-		Theodore - the chubby, impressionable sweetheart. <br>
-		Together, the Chipmunks have become the most successful children's artists of all time 
-		</h3>
-		<a class="cta alt" href="#more-info">Read More</a> 
-		</div>
-		<div class="character1"></div>
-		<div class="character2"></div>
-		<div class="character3"></div>
+
+
+/*
+<div class="more-info" id="more-info">
+		<h2>Join Our Fan Club</h2>
+		<p> This club was created for the fans of Alvin, Simon and Theodore. Check out our discussions and join in! <br> There are so many interesting topics all revolving around the Chipmunks and the Chipettes and we have <span class="highlight"> monthly parties at the Chipmunk HQ.</span> <br> Feel free to browse through all of the cute pictures and just have fun!</p>
+		<button class="cta">Sign Me Up</button>
 	</div>
+
